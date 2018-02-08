@@ -1,0 +1,36 @@
+html,body,div{
+    height:100%;
+}
+
+#container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.input{
+    width: 50%;
+    background-color: azure;
+    float: left;
+}
+.output{
+    width: 50%;
+    background-color: rgb(255, 226, 189);
+    float: right;
+}
+
+.text-input{
+    margin: 10px;
+}
+
+.text-input button{
+    font-size: 24px;
+    padding: 10px;
+    width: 50%;
+    
+}
+input[type=text]{
+    width: 70%;
+    padding: 7px;
+}
