@@ -33,4 +33,15 @@ html,body,div{
 input[type=text]{
     width: 70%;
     padding: 7px;
+
 }
+
+input[type=text]:disabled{
+    background-color: rgb(116, 116, 116);
+}
+
+.type-radio{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+

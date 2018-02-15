@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,56 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id='container'>
-        <div class="input" >
-            <form id="main" >
-                <div  class="text-input">
-                    <label for="title" >Title</label>
-                    <input type="text" name="" id="title" >
+        <div class="input">
+            <form id="main">
+                <div class="text-input">
+                    <label for="title">Title</label>
+                    <input type="text" name="" id="title">
                 </div>
                 <div class="text-input">
                     <label for="date">Date</label>
-                    <input type="text" name="" id="date" >
+                    <input type="text" name="" id="date">
                 </div>
                 <div class="text-input">
-                    <label for="link" >Link</label>
-                    <input type="text" name="" id="link" >
+                    <label for="source">Source</label>
+                    <input type="text" name="" id="source" disabled>
                 </div>
-                
                 <div class="text-input">
-                    <label for="main-text" >Text</label>
-                    <textarea name="" id="main-text" cols="40" rows="10" ></textarea>
+                    <label for="link">Link</label>
+                    <input type="text" name="" id="link">
                 </div>
-                
-                <div class="text-input" >
+
+                <div class="text-input">
+                    <label for="main-text">Text</label>
+                    <textarea name="" id="main-text" cols="40" rows="10"></textarea>
+                </div>
+
+                <div class="text-input">
                     <button type="button" id="submit">Generate</button>
+                    <div class="type-radio">
+                        <input type="radio" name="type" id="blog-type" value="blog" checked>
+                        <label for="blog-type">Blog</label>
+                        <input type="radio" name="type" id="media-type" value="media">
+                        <label for="media-type">Media</label>
+                    </div>
                     <button type="button" id="clear">Clear</button>
                     <button type="button" id="allClear">All Clear</button>
                 </div>
             </form>
         </div>
-        <div class="output" >
-            <textarea name="" id="output-text" cols="50" rows="30" ></textarea>
-            
+        <div class="output">
+            <textarea name="" id="output-text" cols="50" rows="30"></textarea>
+
             <hr>
             <textarea name="" id="all" cols="50" rows="50"></textarea>
         </div>
     </div>
-    
+
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
